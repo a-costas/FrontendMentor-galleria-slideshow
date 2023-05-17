@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  flex-direction: row;
+
+  height: 5rem;
+
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.logo {
+  height: 2rem;
+}
+
+.link2 {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: var(--color-dark-grey);
+}

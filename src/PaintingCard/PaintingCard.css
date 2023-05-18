@@ -1,0 +1,37 @@
+.paintingCard {
+  position: relative;
+}
+
+.paintingCard::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  z-index: 1;
+}
+
+.paintingText {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  align-self: left;
+  left: 2rem;
+  bottom: 2rem;
+  z-index: 2;
+}
+
+.paintingName {
+  color: var(--color-white);
+  text-align: left;
+}
+
+.subhead2 {
+  color: var(--color-grey);
+  text-align: left;
+}

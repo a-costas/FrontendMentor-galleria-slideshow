@@ -1,14 +1,10 @@
 import React from "react";
 import { FC } from "react";
 
-import { Painting } from "../types/Painting";
+import { PaintingProps } from "../../types/Painting";
 import "./PaintingCard.css";
 
-interface PaintingCardProps {
-  painting: Painting;
-}
-
-const PaintingCard: FC<PaintingCardProps> = ({ painting }) => {
+const PaintingCard: FC<PaintingProps> = ({ painting }) => {
   return (
     <div className="paintingCard">
       <img

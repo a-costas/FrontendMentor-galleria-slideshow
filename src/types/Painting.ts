@@ -16,3 +16,7 @@ export interface Painting {
     gallery: string;
   };
 }
+
+export interface PaintingProps {
+  painting: Painting;
+}

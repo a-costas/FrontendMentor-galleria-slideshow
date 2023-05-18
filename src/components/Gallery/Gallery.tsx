@@ -5,6 +5,7 @@ import "./Gallery.css";
 import _paintings from "../../data/data.json";
 import { Painting } from "../../types/Painting";
 import PaintingCard from "../PaintingCard/PaintingCard";
+import PaintingSlide from "../PaintingSlide/PaintingSlide";
 const paintings = _paintings as Painting[];
 
 interface GalleryProps {
@@ -21,7 +22,9 @@ const Gallery: FC<GalleryProps> = ({ isSlideshowActive }) => {
             {!isSlideshowActive ? (
               <PaintingCard painting={painting} />
             ) : (
-              <div> </div>
+              <div>
+                <PaintingSlide painting={painting} />
+              </div>
             )}
           </div>
         );

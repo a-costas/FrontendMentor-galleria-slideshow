@@ -1,0 +1,96 @@
+.paintingSlideText {
+  z-index: 2;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.imageSection {
+  position: relative;
+}
+
+.viewImage {
+  color: var(--color-white);
+  font-size: 0.625rem;
+  line-height: 0.775rem;
+  letter-spacing: 0.1338rem;
+  text-transform: uppercase;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  border: none;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.8125rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  gap: 0.875rem;
+}
+
+.paintingSlideText {
+  position: absolute;
+  width: 85%;
+  bottom: -20%;
+  background-color: var(--color-white);
+}
+
+.paintingSlideName {
+  color: var(--color-black);
+  text-align: left;
+}
+
+.subhead2 {
+  color: var(--color-dark-grey);
+}
+
+.artistImage {
+  width: 4rem;
+  height: 4rem;
+  left: 1rem;
+  top: 0.75rem;
+  position: absolute;
+}
+
+.paintingDescBox {
+  position: relative;
+  padding-top: 2.75rem;
+  margin-top: 2.75rem;
+  padding-bottom: 4.1875rem;
+}
+
+.display {
+  color: var(--color-grey);
+  font-size: 6.25rem;
+  line-height: 6.25rem;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.paintingDescription {
+  color: var(--color-dark-grey);
+  text-align: left;
+  padding-top: 4.625rem;
+  padding-bottom: 4.25rem;
+}
+
+.sourceLink {
+  color: var(--color-dark-grey);
+  font-size: 0.5625rem;
+  line-height: 0.6975rem;
+  letter-spacing: 0.1206rem;
+  text-align: left;
+  text-transform: uppercase;
+  align-self: left;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  overflow: hidden;
+}

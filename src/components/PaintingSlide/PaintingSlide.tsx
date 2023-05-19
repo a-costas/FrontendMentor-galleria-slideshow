@@ -1,4 +1,4 @@
-import { FC, useState, useEffect } from "react";
+import { FC, useState } from "react";
 
 import "./PaintingSlide.css";
 import { PaintingProps } from "../../types/Painting";
@@ -6,11 +6,6 @@ import PaintingModal from "../PaintingModal/PaintingModal";
 
 const PaintingSlide: FC<PaintingProps> = ({ painting }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  console.log("Modal open?", isModalOpen);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const handleClick = () => {
     setIsModalOpen(true);

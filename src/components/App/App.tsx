@@ -12,7 +12,10 @@ function App() {
         isSlideshowActive={isSlideshowActive}
         setIsSlideshowActive={setIsSlideshowActive}
       />
-      <Gallery isSlideshowActive={isSlideshowActive} />
+      <Gallery
+        isSlideshowActive={isSlideshowActive}
+        setIsSlideshowActive={setIsSlideshowActive}
+      />
     </div>
   );
 }

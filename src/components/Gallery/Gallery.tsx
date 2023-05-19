@@ -11,18 +11,28 @@ const paintings = _paintings as Painting[];
 
 interface GalleryProps {
   isSlideshowActive: boolean;
+  setIsSlideshowActive: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Gallery: FC<GalleryProps> = ({ isSlideshowActive }) => {
+const Gallery: FC<GalleryProps> = ({
+  isSlideshowActive,
+  setIsSlideshowActive,
+}) => {
   const [slideIndex, setSlideIndex] = useState(0);
+
+  const onCardClick = (index: React.SetStateAction<number>) => {
+    window.scroll({ top: 0, behavior: "smooth" });
+    setSlideIndex(index);
+    setIsSlideshowActive(true);
+  };
 
   return (
     <main>
       {!isSlideshowActive ? (
         <div className="galleryView">
-          {paintings.map((painting) => {
+          {paintings.map((painting, index) => {
             return (
-              <div key={painting.name}>
+              <div key={index} onClick={() => onCardClick(index)}>
                 <PaintingCard painting={painting} />
               </div>
             );

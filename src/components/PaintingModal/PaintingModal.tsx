@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { PaintingProps } from "../../types/Painting";
 
 import "./PaintingModal.css";
 

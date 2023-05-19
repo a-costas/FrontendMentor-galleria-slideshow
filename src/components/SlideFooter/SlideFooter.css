@@ -1,0 +1,43 @@
+.slideFooter {
+  display: flex;
+  flex-direction: row;
+  padding: 1.0625rem 1.5rem 1rem;
+  border-top: 1px solid var(--color-grey);
+  /* align-items: center; */
+}
+
+.paintingFooterInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5625rem;
+}
+
+.paintingFooterName {
+  font-size: 0.875rem;
+  line-height: 1.085rem;
+}
+
+.artistFooterName {
+  font-size: 0.625rem;
+  line-height: 0.775rem;
+}
+
+.footerBtns {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1.4525rem;
+}
+
+.slideBtnContainer {
+  height: 1rem;
+}
+
+.slideBtn {
+  background-color: transparent;
+  border: none;
+}
+
+.disabled {
+  fill: var(--color-grey);
+}

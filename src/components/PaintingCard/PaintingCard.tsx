@@ -14,7 +14,7 @@ const PaintingCard: FC<PaintingProps> = ({ painting }) => {
       />
       <div className="paintingText">
         <h2 className="paintingName">{painting.name}</h2>
-        <p className="subhead2">{painting.artist.name}</p>
+        <p className="paintingArtist">{painting.artist.name}</p>
       </div>
     </div>
   );

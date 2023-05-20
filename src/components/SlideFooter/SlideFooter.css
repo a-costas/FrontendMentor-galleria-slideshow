@@ -1,9 +1,45 @@
+/* .progressBar {
+  width: 100%;
+  height: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.progressBar[value]::-webkit-progress-bar {
+  background-color: var(--color-black);
+}
+
+progressBar::-webkit-progress-value {
+  background-color: var(--color-black);
+}
+
+progressBar::-webkit-progress-value {
+  background-color: var(--color-grey);
+} */
+
+progress {
+  appearance: none;
+  -webkit-appearance: none;
+
+  display: block;
+  width: 100%;
+  height: 1px;
+  border: 0;
+}
+
+progress::-webkit-progress-bar {
+  background: lightgray;
+}
+
+progress::-webkit-progress-value {
+  background: var(--color-black);
+  transition: width 2s ease-in-out;
+}
+
 .slideFooter {
   display: flex;
   flex-direction: row;
   padding: 1.0625rem 1.5rem 1rem;
-  border-top: 1px solid var(--color-grey);
-  /* align-items: center; */
 }
 
 .paintingFooterInfo {
